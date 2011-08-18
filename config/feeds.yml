@@ -1,0 +1,32 @@
+---
+-
+  name: 'はてなブックマーク - タグ (5users)'
+  url: 'http://b.hatena.ne.jp/t/%s?sort=hot&threshold=5&mode=rss'
+  title: 'はてなブックマーク - タグ - %s'
+  site_url: 'http://b.hatena.ne.jp/t/%s?sort=hot&threshold=5'
+  site_title: 'タグ「%s」を含む新着エントリー - はてなブックマーク'
+-
+  name: 'はてなブックマーク - タグ (1users)'
+  url: 'http://b.hatena.ne.jp/t/%s?sort=eid&mode=rss'
+  title: 'はてなブックマーク - タグ - %s'
+  site_url: http://b.hatena.ne.jp/t/%s?sort=eid
+  site_title: 'タグ「%s」を含む新着エントリー - はてなブックマーク'
+-
+  name: 'はてなキーワード - 含むブログ'
+  url: 'http://k.hatena.ne.jp/keywordblog/%s?mode=rss'
+  title: 「%s」を含むブログ
+  site_url: http://k.hatena.ne.jp/keywordblog/%s
+  site_title: '「%s」を含むブログ - はてなキーワード'
+-
+  name: Google ブログ検索 (Atom)
+  url: 'http://blogsearch.google.co.jp/blogsearch_feeds?hl=ja&q=%s&lr=lang_ja&ie=utf-8&num=10&output=atom'
+  title: '%s - Google ブログ検索'
+  site_url: 'http://blogsearch.google.co.jp/blogsearch?hl=ja&q=%s&lr=lang_ja&ie=utf-8'
+  site_title: '%s - Google ブログ検索'
+-
+  name: Twitter Search
+  url: 'http://search.twitter.com/search.atom?q=%s'
+  title: '%s - Twitter Search'
+  site_url: http://search.twitter.com/search?q=%s
+  site_title: '%s - Twitter Search'
+

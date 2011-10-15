@@ -1,17 +1,18 @@
 == slim :_searchform
-- @feeds.each do |f|
-  h3
-    a href=f.site_url = f.site_title
-  p
-    'Feed URL:
-    a href=f.url = f.url
-    br
-    '&nbsp;- by
-    = f.name
-  - @readers.each do |r|
-    a href=r.add_url(f.url)
-      img src="/images/#{r.image}"
-    '&nbsp;
-br
-br
+table.zebra-striped
+  - @feeds.each do |f|
+    tr
+      td
+        h3
+          a href=f.site_url = f.site_title
+        p
+          'Feed URL:
+          a href=f.url = f.url
+          br
+          '&nbsp;- by
+          = f.name
+        - @readers.each do |r|
+          a href=r.add_url(f.url)
+            img src="/images/#{r.image}"
+          '&nbsp;
 a href="/" HOME

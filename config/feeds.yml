@@ -24,11 +24,17 @@
   site_url: 'http://blogsearch.google.co.jp/blogsearch?hl=ja&q=%s&lr=lang_ja&ie=utf-8'
   site_title: '%s - Google ブログ検索'
 -
-  name: 'Twitter Search'
-  url: 'http://search.twitter.com/search.atom?q=%s'
+  name: 'Twitter Search (日本語)'
+  url: 'http://search.twitter.com/search.atom?q=%s&lang=ja'
   title: '%s - Twitter Search'
-  site_url: 'http://search.twitter.com/search?q=%s'
-  site_title: '%s - Twitter Search'
+  site_url: 'https://twitter.com/search/%s%%20lang:ja'
+  site_title: 'Twitter / Search - %s lang:ja'
+-
+  name: 'Twitter Search (English)'
+  url: 'http://search.twitter.com/search.atom?q=%s&lang=en'
+  title: '%s - Twitter Search'
+  site_url: 'https://twitter.com/search/%s%%20lang:en'
+  site_title: 'Twitter / Search - %s lang:en'
 -
   name: 'Diigo - Tag'
   url: 'http://www.diigo.com/rss/tag/%s?tab=153'

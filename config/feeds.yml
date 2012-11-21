@@ -30,12 +30,6 @@
   site_url: 'http://search.twitter.com/search?q=%s'
   site_title: '%s - Twitter Search'
 -
-  name: 'Delicious - Tag'
-  url: 'http://feeds.delicious.com/v2/rss/tag/%s'
-  title: 'Delicious/tag/%s'
-  site_url: 'http://www.delicious.com/tag/%s'
-  site_title: 'Recent %s bookmarks on Delicious'
--
   name: 'Diigo - Tag'
   url: 'http://www.diigo.com/rss/tag/%s?tab=153'
   title: '%s on Diigo'

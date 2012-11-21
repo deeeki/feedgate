@@ -1,16 +1,16 @@
 ---
 -
-  name: 'はてなブックマーク - タグ (5users)'
-  url: 'http://b.hatena.ne.jp/t/%s?sort=hot&threshold=5&mode=rss'
-  title: 'はてなブックマーク - タグ - %s'
-  site_url: 'http://b.hatena.ne.jp/t/%s?sort=hot&threshold=5'
-  site_title: 'タグ「%s」を含む新着エントリー - はてなブックマーク'
+  name: 'はてなブックマーク - タグ検索 (5users)'
+  url: 'http://b.hatena.ne.jp/search/tag?q=%s&users=5&mode=rss'
+  title: 'タグ「%s」を検索 - はてなブックマーク'
+  site_url: 'http://b.hatena.ne.jp/search/tag?q=%s&users=5'
+  site_title: 'タグ「%s」を検索 - はてなブックマーク (5users)'
 -
-  name: 'はてなブックマーク - タグ (1users)'
-  url: 'http://b.hatena.ne.jp/t/%s?sort=eid&mode=rss'
-  title: 'はてなブックマーク - タグ - %s'
-  site_url: 'http://b.hatena.ne.jp/t/%s?sort=eid'
-  site_title: 'タグ「%s」を含む新着エントリー - はてなブックマーク'
+  name: 'はてなブックマーク - タグ検索 (1user)'
+  url: 'http://b.hatena.ne.jp/search/tag?q=%s&users=1&mode=rss'
+  title: 'タグ「%s」を検索 - はてなブックマーク'
+  site_url: 'http://b.hatena.ne.jp/search/tag?q=%s&users=1'
+  site_title: 'タグ「%s」を検索 - はてなブックマーク (1user)'
 -
   name: 'はてなキーワード - 含むブログ'
   url: 'http://k.hatena.ne.jp/keywordblog/%s?mode=rss'

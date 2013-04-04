@@ -13,12 +13,12 @@ end
 get '/search' do
   q = params[:q]
   redirect '/' if q.to_s.empty?
-  redirect '/keyword/' + q
+  redirect "/keyword/#{q}"
 end
 
 get '/keyword/*' do |q|
   @q = Temple::Utils::escape_html q
-  @readers = ReaderManager.load
-  @feeds = FeedManager.find(q)
+  @readers = Reader.collect
+  @feeds = Feed.collect_with_word(q)
   slim :keyword
 end

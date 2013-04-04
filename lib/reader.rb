@@ -1,33 +1,29 @@
+require 'model'
 require 'cgi'
 
-class Reader
-  attr_reader :name, :url, :title, :image
-
-  def initialize config
-    @name = config['name']
-    @url = config['url']
-    @title = config['title']
-    @image = config['image']
-    @encode = config['encode']
-    @add_url = config['add_url']
-  end
-
-  def add_url url
-    url = CGI.escape url unless @encode.zero?
-    sprintf @add_url, url
-  end
-end
-
-class ReaderManager
+class Reader < Model
   class << self
-    def config
-      @config ||= YAML.load_file settings.root + '/config/readers.yml'
-    end
-
-    def load
-      config.map do |c|
-        Reader.new c
+    def collect
+      configs.map do |c|
+        from_config(c)
       end
     end
+
+    private
+
+    def configs
+      @configs ||= YAML.load_file("#{config_root}/readers.yml")
+    end
+
+    def from_config config
+      new(config)
+    end
+  end
+
+  attr_reader :name, :url, :title, :image
+
+  def add_url url
+    url = CGI.escape(url) unless @encode.zero?
+    @add_url % url
   end
 end

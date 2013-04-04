@@ -1,10 +1,9 @@
-$:.unshift File.dirname(__FILE__)
-
 require 'bundler/setup'
 Bundler.require(:default) if defined?(Bundler)
 
-require 'lib/feed'
-require 'lib/reader'
+$:.unshift(File.expand_path('../lib', __FILE__))
+require 'feed'
+require 'reader'
 
 get '/' do
   @q = ''

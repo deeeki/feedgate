@@ -47,3 +47,9 @@
   title: '%s on Diigo'
   site_url: 'http://www.diigo.com/tag/%s?tab=153'
   site_title: '%s | Diigo'
+-
+  name: 'Qiita [キータ] - タグ'
+  url: 'http://qiita.com/tags/%s/feed.atom'
+  title: '%sタグが付けられた新着投稿 - Qiita'
+  site_url: 'http://qiita.com/tags/%s'
+  site_title: '%sに関する新着投稿 - Qiita [キータ]'
